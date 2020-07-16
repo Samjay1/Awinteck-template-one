@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+       
+    <title>Freelancer</title>
+    <style>
+        body{
+            background: url(desk.jpg) space ;
+            background-size:cover;
+            height: 620px; 
+            color: #313131;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        @keyframes myanimation
+                {
+                    from {
+                        margin-left: -200px;
+                    }
+                    to {
+                        margin-left: 0px;
+                    }
+                }
+
+                @keyframes myanimation1
+                {
+                    from {
+                        margin-right: -400px;
+                    }
+                    to {
+                        margin-right: 0px;
+                    }
+                }
+        header{ 
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 30px;
+        }
+        header nav {
+            /* animation: myanimation1 1s ease-in-out; */
+        }
+        header nav ul li{
+            display:inline-block;
+            margin: 0px 10px;
+        }
+
+        .logo h3{
+            /* animation: myanimation 1s ease-in-out; */
+            font-family: 'Boogaloo'; 
+            font-size: 1.4em; 
+            color: #454545;
+            letter-spacing: 2px;
+            
+        }
+        .sbtn{
+            border: 2px solid #ff0059;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        a{
+            font-size: 1.1em;
+            text-decoration: none;
+            color: #ff0059; 
+            font-weight: 600;
+        }
+        .main{
+            margin: 15% 30px; 
+            width: 70%; 
+        }
+        .btn-container{
+            /* animation: myanimation 1s ease-in-out; */
+            margin: 40px 0px;
+        }
+        .learnbtn{
+            background-color: orange; 
+            background-image: linear-gradient(orange,#ff0059);
+            padding: 10px 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            color: white;
+            box-shadow: 5px 4px 11px rgb(78, 78, 78);
+        }
+
+        .ktitle{
+            font-size: 45px;
+            color: #454545; 
+        }
+        .ktext{
+            font-size: 25px;
+            color: #242222;
+             
+        }
+        .active{
+            border-bottom: 2px solid white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo "><h3 class=" animate__animated animate__backInLeft">Awinteck.code</h3></div>
+        <nav class="animate__animated animate__backInRight">
+            <ul type=none>
+                <li><a class="active" href="">About us</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Hiring</a></li>
+                <li><a href="">QA</a></li>
+                <li><a class="sbtn" href="">SIGN IN </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <h1 class="ktitle animate__animated animate__bounce ">Awinteck.code <wbr/>Freelancing</h1>
+        <p class="ktext animate__animated animate__backInLeft">Join our community of freelancers and make extra cash as part-time or full-time gig</p>
+        <div class="btn-container animate__animated animate__backInUp">
+            <a class="learnbtn" href="">LEARN MORE</a>
+            <a href=""> Don't have an account?</a>                     
+        </div>
+    </div>
+</body>
+</html>
